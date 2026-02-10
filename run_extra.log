@@ -1,0 +1,22 @@
+VCD info: dumpfile tb_extra.vcd opened for output.
+RESET released at 15000
+--- TEST A: example1 ---
+OK test=1 at 96000 : out=[2(1),1(1),0(0),0(0)]
+--- TEST B: example2 ---
+OK test=2 at 226000 : out=[3(1),4(1),2(1),1(1)]
+--- TEST C: repeats ---
+OK test=3 at 306000 : out=[7(1),4(1),3(1),2(1)]
+--- TEST D: alternation ---
+OK test=4 at 416000 : out=[5(1),6(1),7(1),4(1)]
+--- TEST E: many uniques ---
+OK test=5 at 526000 : out=[9(1),15(1),14(1),13(1)]
+--- TEST F: zeros as data ---
+OK test=6 at 596000 : out=[1(1),0(1),8(1),9(1)]
+--- TEST G: mid-sequence reset ---
+OK test=7 at 706000 : out=[9(1),7(1),0(0),0(0)]
+--- TEST H: random burst (32 samples) ---
+OK test=8 at 1056000 : out=[11(1),3(1),8(1),9(1)]
+--- TEST I: stress random (64 samples) ---
+OK test=9 at 1726000 : out=[31(1),16(1),4(1),25(1)]
+ALL TESTS PASSED (tb_extra)
+tb_extra.sv:279: $finish called at 1726000 (1ps)
